@@ -1,4 +1,11 @@
-Node application with express session
+#Node application with express session
+
+Cookie-Session Based Authentication
+    Client sends user name and password
+    Server checks whether user exists with cresentials
+    If exists create a new session and send back session-id to client
+    Client header includes SET-COOKIE and saves that calue in client cookie storage
+    All the further request client includes cookie in the request header
 
 Seesion is created on the server side and saved to mongoDB store. Session-Id is sent to client
 
